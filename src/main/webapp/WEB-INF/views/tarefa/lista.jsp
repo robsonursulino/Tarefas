@@ -24,6 +24,15 @@
 					<td>${tarefa.id}</td>
 					<td>${tarefa.descricao}</td>
 					<td>${tarefa.finalizado}</td>
+					<c:choose>
+						<c:when test="${tarefa.finalizado == true}">
+							<td>Finalizado</td>
+						</c:when>
+						<c:otherwise>
+							<td>Não finalizado</td>
+						</c:otherwise>
+					</c:choose>
+					<td><fmt:formatDate value="${tarefa.dataFinalizacao.time}" pattern="dd/MM/yyyy" /></td>
 				</tr>
 			
 			</c:forEach>
