@@ -4,13 +4,13 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<properties>
 			<!-- Conexão -->
-			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/tarefas"/>
-			<property name="javax.persistence.jdbc.user" value="postgres"/>
-			<property name="javax.persistence.jdbc.password" value="123"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="senha"/>
 			
 			<!-- Hibernate -->
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
 			<property name="hibernate.hbm2ddl.auto" value="update"/>
 			<property name="hibernate.show_sql" value="true"/>
 		</properties>
